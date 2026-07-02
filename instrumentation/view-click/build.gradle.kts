@@ -3,10 +3,10 @@ plugins {
     id("otel.publish-conventions")
 }
 
-description = "OpenTelemetry Android View scroll library instrumentation"
+description = "OpenTelemetry Android View click library instrumentation"
 
 android {
-    namespace = "io.opentelemetry.android.instrumentation.view.scroll"
+    namespace = "io.opentelemetry.android.instrumentation.view.click"
 
     defaultConfig {
         consumerProguardFiles("consumer-rules.pro")
@@ -18,7 +18,7 @@ dependencies {
     implementation(project(":services"))
     implementation(project(":agent-api"))
     implementation(project(":instrumentation:android-instrumentation"))
-    implementation(project(":instrumentation:view:common"))
+    implementation(project(":instrumentation:view-common"))
 
     implementation(libs.opentelemetry.instrumentation.apiSemconv)
     implementation(libs.opentelemetry.semconv.kotlin)
